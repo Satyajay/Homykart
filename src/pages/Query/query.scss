@@ -1,0 +1,110 @@
+page-query{
+
+    h3{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  .serHeading > p
+{
+	text-align: center;
+	font-size: 20px;
+	margin: 15px 0;
+}
+
+	.serHeading > p > span
+	{
+		border-bottom: 2px solid #1da1f4;
+		padding: 5px 0;
+	}  
+.thumbnail
+{
+	min-height: 100px;
+	min-width: 110px;
+}
+
+	.thumbnail:hover
+	{
+		text-decoration: none;
+		border-top-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+	}
+
+	.thumbnail > p
+	{
+		text-align: center;
+		padding: 10px 1px;
+		margin-bottom: 1px;
+	}
+
+.why
+{
+	margin: 5px 0;
+}
+
+	.why > div > img
+	{
+		height: 40px;
+		width: 40px;
+		margin: 0;
+	}
+
+	.why > div > h3
+	{
+		margin: 3px 0;
+		padding: 5px 0;
+		font-size: 20px;
+		border-bottom: 1px solid pink;
+	}
+
+	.why > div > p
+	{
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+.work
+{
+	text-align: center;
+}
+
+	.work > div > img
+	{
+		border: 1px solid pink;
+		border-top-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+		border-bottom-left-radius: 25px;
+		padding: 20px 20px 30px 20px;
+		margin: 15px;
+	}
+
+	.work > div > h1
+	{
+		margin-top: -40px;
+		margin-left: 10px;
+		font-size: 16px;
+	}
+
+	.work > div > h4
+	{
+		margin-top: 20px;
+		margin-left: 10px;
+		font-size: 16px;
+	}
+
+.list-unstyled
+{
+	margin-left: 13%;
+	list-style: none;
+}
+
+.list-inline
+{
+	padding-left: 0;
+	margin-top: 5px;
+	margin-left: 13%;
+	list-style: none;
+}
+
+}
+    

@@ -1,0 +1,117 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+
+  <!-- Slider -->
+<div>
+  <ion-slides pager>
+
+    <ion-slide>
+      <img src="assets/image/10.jpg" alt="your image">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/image/6.jpg" alt="your image">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/image/11.png" alt="your image">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/image/12.jpg" alt="your image">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/image/9.jpg" alt="your image">
+    </ion-slide>
+
+
+  </ion-slides>
+</div>
+
+<div class="row serHeading" >
+        <p><span><b>Our Services</b></span></p>
+      </div>
+
+  <!-- Grid -->
+
+  <ion-grid text-center style="background-color:aliceblue">
+    <ion-row>
+      <ion-col menuClose (click)="clickAction('Mechanical')">
+        <img src="assets/service/mechanical.png" alt="your image">
+        <p>Mechanical</p>
+      </ion-col>
+      <ion-col menuClose (click)="clickAction('Acconting')">
+        <img src="assets/service/account.png" alt="your image">
+        <p>Acconting</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col menuClose (click)="clickAction('ACRepair')">
+        <img src="assets/service/ac.png" alt="your image">
+        <p>AC Repair</p>
+      </ion-col>
+      <ion-col menuClose (click)="clickAction('Carpenter')">
+        <img src="assets/service/carpenter.png" alt="your image">
+        <p>Carpenter</p>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row menuClose (click)="clickAction('Construction')">
+      <ion-col>
+        <img src="assets/service/construction.png" alt="your image">
+        <p>Construction</p>
+      </ion-col>
+      <ion-col menuClose (click)="clickAction('Gardening')">
+        <img src="assets/service/ecology.png" alt="your image">
+        <p>Gardening</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col menuClose (click)="clickAction('Cooler/fan')">
+        <img src="assets/service/fan.png" alt="your image">
+        <p>Cooler/Fan</p>
+      </ion-col>
+      <ion-col menuClose (click)="clickAction('Beauty/salon')">
+        <img src="assets/service/hairdresser.png" alt="your image">
+        <p>Beauty/Salon</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col menuClose (click)="clickAction('Microwave')">
+        <img src="assets/service/microwave.png" alt="your image">
+        <p>Microwave</p>
+      </ion-col>
+      <ion-col menuClose (click)="clickAction('Computer')">
+        <img src="assets/service/monitor.png" alt="your image">
+        <p>Computer</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col menuClose (click)="clickAction('Painter')">
+        <img src="assets/service/paint-roller.png" alt="your image">
+        <p>Painter</p>
+      </ion-col>
+      <ion-col menuClose (click)="clickAction('Refrigerator')">
+        <img src="assets/service/refrigerator.png" alt="your image">
+        <p>Refrigerator</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
